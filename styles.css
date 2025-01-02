@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #100f1a; /* Fallback color */
+  background: url('back.gif') no-repeat center center fixed; /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  color: white;
+}
+
+header {
+  background-color: #5b0695;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #272d45;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav .active {
+  border-bottom: 3px solid orange;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh; /* Make sure the section covers most of the viewport height */
+  background: url('back.gif') no-repeat center center; /* Ensure the image is centered */
+  background-size: cover; /* Ensure the image covers the entire section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white; /* Text color for readability */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for better text visibility */
+}
+
+
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(29, 35, 51, 0.9); /* Slight overlay to enhance text visibility */
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ffffffa0;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #d77b00;
+}
+
+/* Forms */
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1d2333;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Profile Completion */
+.profile-pic {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile-status {
+  margin-top: 10px;
+  font-size: 18px;
+  color: orange;
+}
+
+/* Dashboard Sections */
+.completion, .ar-battery, .logs-alerts {
+  margin: 20px;
+  padding: 20px;
+  background-color: #272d45;
+  border-radius: 10px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.completion h2, .ar-battery h2, .logs-alerts h2 {
+  color: orange;
+}
+
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1d2333;
+  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+/* Roadmap */
+.roadmap {
+  text-align: center;
+}
+
+.roadmap-icons button {
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 15px;
+}
+
+/* Settings Page */
+.settings-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings-options button {
+  margin: 10px 0;
+  width: 200px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
